@@ -1,0 +1,13 @@
+---
+layout: post
+title: "404"
+permalink: /404/
+--- 
+
+###Ooops.
+
+Don't fret though. All of our posts are on <a href="/">our front page</a>, so you should find what you're looking for there.
+
+Sorry,
+
+Yura Zatsepin

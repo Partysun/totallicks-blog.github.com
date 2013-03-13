@@ -1,0 +1,41 @@
+---
+layout: base
+title: "Totallicks - делаем музыкантов."
+---
+
+<div class="content">
+  <div class="container" style="display:block;">
+    <div class="sixteen columns logo">
+      <a href="/" ><img src="/images/logo.png" style="width:10%;height:10%;"></a>
+    </div>
+    <div class="sixteen columns">
+      <div id="nav">
+        <ul>
+            <li class="first"><a href="/about">About</a></li>
+            <li class=""><a href="http://totallicks.com/about/how-it-works/">How it works?</a></li>
+            <li class="last"><a href="http://totallicks.com/about/jobs/">We're hiring</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sixteen columns">
+      <ul class="related">
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}"><h2>{{ post.title }}</h2><span>{{ post.date | date: "%B %e, %Y" }}</span></a> 
+          {% if post.description %}
+            {{ post.description|textilize }}
+          {% else %}
+            {{ post.content }}
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="sixteen columns">
+      <hr />
+      <a href="https://www.hipchat.com/gxTUuEtse" class="button home">Disscuss Your Ideas in Chat</a>
+      <a href="http://www.facebook.com/Totallicks?fref=ts" class="button home" >Facebook</a>
+      <small class="pull-right">Made with ♥ in <a href="http://en.wikipedia.org/wiki/Surgut">Surgut</a></small>
+    </div>
+  </div>
+</div>
